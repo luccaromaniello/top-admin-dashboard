@@ -8,10 +8,9 @@ The solution is available at (coming soon).
 ## Instructions
 
 By the time this challenge was completed, the core concepts of this challenge include:
-- (coming soon)
-- (coming soon)
-- (coming soon)
-- (coming soon)
+- Recreate the provided design layout (`instructions/original-layout.png` in the repository), with the option to customize some aspects of it.
+- Use only HTML and pure CSS (no frameworks or libraries), with a focus on CSS Grid.
+- Responsive design is addressed in later projects, so mobile visualization was not considered.
 
 ## Observations
 - The course gets regular updates from the open-source community, so things might look a little different now compared to when this project was done.
