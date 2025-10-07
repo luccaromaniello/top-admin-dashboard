@@ -1,0 +1,38 @@
+:root {
+  --blue: #1992d4;
+}
+
+body {
+  display: grid;
+  grid-template-columns: minmax(15%, 240px) 1fr;
+  height: 100vh;
+}
+
+#sidenav-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  gap: 32px;
+  background-color: var(--blue);
+  color: white;
+  padding: 16px 24px;
+  height: 100%;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+#sidenav {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#sidenav ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
