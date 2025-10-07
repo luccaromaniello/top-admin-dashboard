@@ -1,11 +1,15 @@
 :root {
   --blue: #1992d4;
+  --grey: #e2e8f0;
+  --top-padding: 16px;
+  --horizontal-padding: 24px;
 }
 
 body {
   display: grid;
   grid-template-columns: minmax(15%, 240px) 1fr;
   height: 100vh;
+  background-color: var(--grey);
 }
 
 #sidenav-container {
@@ -15,7 +19,7 @@ body {
   gap: 32px;
   background-color: var(--blue);
   color: white;
-  padding: 16px 24px;
+  padding: var(--top-padding) 24px;
   height: 100%;
 }
 
@@ -35,4 +39,18 @@ h1 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 8px;
+}
+
+#header {
+  background-color: white;
+  padding: var(--top-padding) var(--horizontal-padding);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#subheader {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
 }
