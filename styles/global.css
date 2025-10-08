@@ -1,9 +1,10 @@
 :root {
   --blue: #1992d4;
   --grey: #e2e8f0;
+  --dark-grey: #787878;
   --top-padding: 16px;
   --horizontal-padding: 24px;
-  --content-gap: 16px;
+  --content-gap: 24px;
 }
 
 body {
@@ -58,7 +59,7 @@ h1 {
 
 #content {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   padding: 32px var(--horizontal-padding);
   gap: var(--content-gap);
 }
@@ -72,8 +73,28 @@ h1 {
 #projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--content-gap);
 }
 
 .section-heading {
   grid-column: 1 / -1;
 }
+
+.trending-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.text-secondary {
+  color: var(--dark-grey);
+}
+
+/*todo fix sidenav height*/
