@@ -1,11 +1,16 @@
 :root {
   --blue: #1992d4;
   --grey: #e2e8f0;
-  --dark-grey: #787878;
+  --dark-grey: #636363;
   --top-padding: 16px;
   --horizontal-padding: 24px;
   --content-gap: 24px;
   --accent: #f0b429;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Variable.ttf") format("ttf");
 }
 
 body {
@@ -13,6 +18,7 @@ body {
   grid-template-columns: minmax(15%, 240px) 1fr;
   height: 100vh;
   background-color: var(--grey);
+  font-family: "Roboto", sans-serif;
 }
 
 #sidenav-container {
@@ -100,6 +106,11 @@ h1 {
 
 .text-secondary {
   color: var(--dark-grey);
+}
+
+.project-title {
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 /*todo fix sidenav height*/
