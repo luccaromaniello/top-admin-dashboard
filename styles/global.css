@@ -8,6 +8,7 @@
   --dark-grey: #636363;
   --top-padding: 16px;
   --horizontal-padding: 24px;
+  --heading-gap: 8px;
   --content-gap: 24px;
   --accent: #f0b429;
 }
@@ -72,19 +73,21 @@ body {
   gap: calc(var(--content-gap) * 2);
 }
 
-.announcement-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--content-gap);
-}
-
 .card .announcement + .announcement {
   border-top: 1px solid var(--light-grey);
   margin-top: 16px;
   padding-top: 16px;
 }
 
-.projects-container {
+.projects-container,
+.trending-container,
+.announcement-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--heading-gap);
+}
+
+.projects-content-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
   grid-auto-rows: max-content;
@@ -100,12 +103,6 @@ body {
 
 .project-card {
   height: 220px;
-}
-
-.trending-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-  gap: var(--content-gap);
 }
 
 /*todo fix sidenav height*/
