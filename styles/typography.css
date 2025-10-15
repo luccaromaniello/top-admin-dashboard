@@ -35,3 +35,16 @@ h4 {
 .text-secondary {
   color: var(--dark-grey);
 }
+
+.project-card div .text-secondary {
+  --clamp: 4;
+  color: var(--dark-grey);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: var(--clamp);
+  -webkit-line-clamp: var(--clamp);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5em;
+  max-height: calc(1.5em * var(--clamp));
+}
