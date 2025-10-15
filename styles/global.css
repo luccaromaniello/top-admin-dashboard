@@ -79,6 +79,11 @@ body {
   padding-top: 16px;
 }
 
+.announcement-content-container {
+  padding-left: calc(var(--content-gap) * 1.5);
+  padding-right: calc(var(--content-gap) * 1.5);
+}
+
 .projects-container,
 .trending-container,
 .announcement-container {
@@ -94,11 +99,22 @@ body {
   gap: var(--content-gap);
 }
 
+.trending-content-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--content-gap);
+}
+
 .section-heading {
   grid-column: 1 / -1;
   grid-row: 1;
   height: auto;
   align-self: start;
+}
+
+.announcement h3 {
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 
 /*todo fix sidenav height*/
