@@ -79,8 +79,8 @@ h1 {
 }
 
 .announcement-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 16px;
 }
 
@@ -107,9 +107,10 @@ h1 {
 }
 
 .section-heading {
+  font-weight: 500;
   grid-column: 1 / -1;
-  height: auto; /* Let it size itself */
-  align-self: start; /* Align to top of its row */
+  height: auto;
+  align-self: start;
   grid-row: auto;
 }
 
@@ -132,13 +133,23 @@ h1 {
   /*height: 240px;*/
 }
 
+.body-1 {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.body-2 {
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
 .text-secondary {
   color: var(--dark-grey);
 }
 
 .project-title {
-  font-weight: 500;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
 /*todo fix sidenav height*/
