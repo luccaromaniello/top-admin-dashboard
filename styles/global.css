@@ -94,7 +94,7 @@ body {
 
 .projects-content-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(296px, 1fr));
   grid-auto-rows: max-content;
   gap: var(--content-gap);
 }
@@ -115,6 +115,18 @@ body {
 .announcement h3 {
   font-size: 0.9rem;
   font-weight: bold;
+}
+
+.project-actions {
+  display: grid;
+  grid-template-columns: 32px 32px 32px;
+  justify-content: end;
+  gap: 24px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
 }
 
 /*todo fix sidenav height*/
