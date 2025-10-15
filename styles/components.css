@@ -7,8 +7,13 @@
 
 .project-card {
   border-left: solid 8px var(--accent);
-  max-height: 220px;
+  max-height: 240px;
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
   gap: 24px;
+}
+
+.project-card > div:first-child {
+  overflow: hidden;
 }
