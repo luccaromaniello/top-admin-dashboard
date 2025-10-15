@@ -75,7 +75,7 @@ body {
 .announcement-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 16px;
+  gap: var(--content-gap);
 }
 
 .card .announcement + .announcement {
@@ -87,14 +87,25 @@ body {
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  grid-auto-rows: max-content;
   gap: var(--content-gap);
+}
+
+.section-heading {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  height: auto;
+  align-self: start;
+}
+
+.project-card {
+  height: 220px;
 }
 
 .trending-container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: var(--content-gap);
 }
 
 /*todo fix sidenav height*/
