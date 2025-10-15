@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Variable.ttf") format("ttf");
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.section-heading {
+  font-weight: 500;
+  grid-column: 1 / -1;
+  height: auto;
+  align-self: start;
+  grid-row: auto;
+}
+
+.body-1 {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.body-2 {
+  font-size: 0.9rem;
+  line-height: 1.25;
+}
+
+.text-secondary {
+  color: var(--dark-grey);
+}
