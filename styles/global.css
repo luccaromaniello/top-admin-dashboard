@@ -1,3 +1,5 @@
+@import url("./typography.css");
+
 :root {
   --blue: #1992d4;
   --grey: #e2e8f0;
@@ -7,11 +9,6 @@
   --horizontal-padding: 24px;
   --content-gap: 24px;
   --accent: #f0b429;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../assets/fonts/Roboto-Variable.ttf") format("ttf");
 }
 
 body {
@@ -31,10 +28,6 @@ body {
   color: white;
   padding: var(--top-padding) 24px;
   height: 100%;
-}
-
-h1 {
-  font-weight: bold;
 }
 
 #sidenav {
@@ -95,23 +88,10 @@ h1 {
   font-weight: bold;
 }
 
-.announcement .text-secondary {
-  font-size: 0.9rem;
-  line-height: 1.25;
-}
-
 #projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
   gap: var(--content-gap);
-}
-
-.section-heading {
-  font-weight: 500;
-  grid-column: 1 / -1;
-  height: auto;
-  align-self: start;
-  grid-row: auto;
 }
 
 .trending-container {
@@ -131,20 +111,6 @@ h1 {
 .project-card {
   border-left: solid 8px var(--accent);
   /*height: 240px;*/
-}
-
-.body-1 {
-  font-size: 1rem;
-  line-height: 1.2;
-}
-
-.body-2 {
-  font-size: 0.9rem;
-  line-height: 1.2;
-}
-
-.text-secondary {
-  color: var(--dark-grey);
 }
 
 .project-title {
