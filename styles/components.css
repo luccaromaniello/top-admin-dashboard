@@ -7,4 +7,5 @@
 
 .project-card {
   border-left: solid 8px var(--accent);
+  height: 220px;
 }
