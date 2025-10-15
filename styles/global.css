@@ -1,6 +1,7 @@
 :root {
   --blue: #1992d4;
   --grey: #e2e8f0;
+  --light-grey: #d2d2d2;
   --dark-grey: #636363;
   --top-padding: 16px;
   --horizontal-padding: 24px;
@@ -77,14 +78,39 @@ h1 {
   gap: calc(var(--content-gap) * 2);
 }
 
+.announcement-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card .announcement + .announcement {
+  border-top: 1px solid var(--light-grey);
+  margin-top: 16px;
+  padding-top: 16px;
+}
+
+.announcement h3 {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.announcement .text-secondary {
+  font-size: 0.9rem;
+  line-height: 1.25;
+}
+
 #projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
   gap: var(--content-gap);
 }
 
 .section-heading {
   grid-column: 1 / -1;
+  height: auto; /* Let it size itself */
+  align-self: start; /* Align to top of its row */
+  grid-row: auto;
 }
 
 .trending-container {
@@ -103,6 +129,7 @@ h1 {
 
 .project-card {
   border-left: solid 8px var(--accent);
+  /*height: 240px;*/
 }
 
 .text-secondary {
