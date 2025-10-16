@@ -129,4 +129,16 @@ body {
   height: 24px;
 }
 
+.trending-user {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  align-items: center;
+  gap: 8px;
+}
+
+.avatar {
+  width: 52px;
+  height: 52px;
+}
+
 /*todo fix sidenav height*/
