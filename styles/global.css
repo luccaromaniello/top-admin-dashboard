@@ -46,6 +46,42 @@ body {
   gap: 12px;
 }
 
+.menu-icon {
+  width: 24px;
+  height: 24px;
+  color: white;
+  display: block;
+  align-self: center;
+  justify-self: center;
+}
+
+.heading-container {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+.heading-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.heading-text {
+  line-height: 1.25;
+}
+
+.menu-item {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-label {
+  align-self: center;
+}
+
 #header {
   background-color: white;
   padding: var(--top-padding) var(--horizontal-padding);
@@ -139,42 +175,6 @@ body {
 .avatar {
   width: 52px;
   height: 52px;
-}
-
-.menu-icon {
-  width: 24px;
-  height: 24px;
-  color: white;
-  display: block;
-  align-self: center;
-  justify-self: center;
-}
-
-.heading-container {
-  display: grid;
-  grid-template-columns: 40px 1fr;
-  align-items: center;
-  gap: 12px;
-}
-
-.heading-icon {
-  width: 40px;
-  height: 40px;
-}
-
-.heading-text {
-  line-height: 1.25;
-}
-
-.menu-item {
-  display: grid;
-  grid-template-columns: 32px 1fr;
-  align-items: center;
-  gap: 20px;
-}
-
-.menu-label {
-  align-self: center;
 }
 
 /*todo fix sidenav height*/
