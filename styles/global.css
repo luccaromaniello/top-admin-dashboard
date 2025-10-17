@@ -15,7 +15,7 @@
 
 body {
   display: grid;
-  grid-template-columns: minmax(15%, 240px) 1fr;
+  grid-template-columns: minmax(15%, 280px) 1fr;
   height: 100vh;
   background-color: var(--grey);
   font-family: "Roboto", sans-serif;
