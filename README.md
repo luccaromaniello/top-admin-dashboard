@@ -3,7 +3,7 @@
 
 ## Solution
 
-The solution is available at (coming soon).
+The solution is available at [https://luccaromaniello.com/theodinproject/admin-dashboard/](https://luccaromaniello.com/theodinproject/admin-dashboard/).
 
 ## Instructions
 
