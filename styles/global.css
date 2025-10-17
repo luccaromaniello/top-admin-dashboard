@@ -178,6 +178,7 @@ body {
 .announcement-container {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
   gap: var(--heading-gap);
 }
 
@@ -196,7 +197,6 @@ body {
 
 .section-heading {
   grid-column: 1 / -1;
-  grid-row: 1;
   height: auto;
   align-self: start;
 }
@@ -262,5 +262,3 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
 }
-
-/*todo fix sidenav height*/
