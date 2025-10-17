@@ -89,12 +89,29 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 4px;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 #subheader {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
+  justify-content: space-between;
+}
+
+.header-buttons {
+  display: grid;
+  grid-auto-flow: column; /* Place items in a row automatically */
+  gap: 24px; /* Optional: space between buttons */
+  justify-items: start;
+  align-items: center;
+  width: fit-content;
+  justify-self: end;
+}
+
+.header-buttons button {
+  white-space: nowrap;
 }
 
 #content {
@@ -186,7 +203,7 @@ body {
 .greeting-container {
   display: grid;
   grid-template-columns: 72px 1fr;
-  gap: 24px;
+  gap: 16px;
   justify-items: start;
   align-items: center;
 }
@@ -204,6 +221,11 @@ body {
 .user-greeting {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.user-highlight {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 /*todo fix sidenav height*/
